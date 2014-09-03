@@ -13,17 +13,17 @@ This demo integrates MQTT and IBM MessageSight to provide a highly scalable, low
 Free draw, add objects of your own size and color, drag, format objects, remove what you don't like or clear everything and start all over again, discuss the design project with co-designers  and when you are done print and save a copy of the design on your Android device.  If you don't have space to store don't worry, the design is already saved in IBM MessageSight. Just login to same room every time and the design is intact.
 
 ##Subscription Topic
-smartboard/<<'room'>>/#
+smartboard/*room*/#
 
 ## Topic And Sample Payloads:
 
 |Topic |Sample Topic|Sample Payload
 |:------ |:---------:|:------------|
-|smartboard/<room>/objects/<id>[retained]| smartboard/room5/objects/2167f29d-3b38-432a-8091-6f20bfbff7b5| {"id":"2167f29d-3b38-432a-8091-6f20bfbff7b5","dimens":"382 330 620 517","type":"Rectangle","color":-16777216,"clientId":"paho-917066198329565","size":5} |
-|smartboard/<room>/chat|[smartboard/room5/chat]| {"selfie":"tjaXL...\n","message":"Allan: Hey dude!","time":"2014-09-02 16:07:55","username":"Allan%adb7177b-d39c-46cb-a6f1-235392b99873","type":"Chat","clientId":"paho-917066198329565","direction":false}|
-|smartboard/<room>/points|[smartboard/room5/points]|{"color":-16777216,"brushSize":5,"mX":784.2857055664063,"drawActionFlag":0,"type":"Point","clientId":"paho-917066198329565","mode":"pencil","mY":448.71429443359375}|
-|smartboard/<room>/users/<name> [retained]|[smartboard/room5/users/Allan%71afd4f2-5950-4bfd-a89a-baf73271f80c]|{"selfie":"tja...\n","time":"2014-09-02 15:59:39","type":"User","status":"online","clientId":"paho-916727881160387","userId":"Allan%3e743630-8cfa-4f74-bce0-3705bb83fe2b"}|
-|smartboard/<room>/clear|[smartboard/room5/clear]|{"type":"ClearScreen"}|
+|smartboard/*room*/objects/*id*[retained]| smartboard/room5/objects/2167f29d-3b38-432a-8091-6f20bfbff7b5| {"id":"2167f29d-3b38-432a-8091-6f20bfbff7b5","dimens":"382 330 620 517","type":"Rectangle","color":-16777216,"clientId":"paho-917066198329565","size":5} |
+|smartboard/*room*/chat|[smartboard/room5/chat]| {"selfie":"tjaXL...\n","message":"Allan: Hey dude!","time":"2014-09-02 16:07:55","username":"Allan%adb7177b-d39c-46cb-a6f1-235392b99873","type":"Chat","clientId":"paho-917066198329565","direction":false}|
+|smartboard/*room*/points|[smartboard/room5/points]|{"color":-16777216,"brushSize":5,"mX":784.2857055664063,"drawActionFlag":0,"type":"Point","clientId":"paho-917066198329565","mode":"pencil","mY":448.71429443359375}|
+|smartboard/*room*/users/*name* [retained]|[smartboard/room5/users/Allan%71afd4f2-5950-4bfd-a89a-baf73271f80c]|{"selfie":"tja...\n","time":"2014-09-02 15:59:39","type":"User","status":"online","clientId":"paho-916727881160387","userId":"Allan%3e743630-8cfa-4f74-bce0-3705bb83fe2b"}|
+|smartboard/*room*/clear|[smartboard/room5/clear]|{"type":"ClearScreen"}|
 
 
 ##Installation
