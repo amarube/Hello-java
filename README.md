@@ -16,6 +16,6 @@ A simple MQTT Android client for test, debug and monitoring.
 
 ##Relational Diagram
 
-[click here to view diagram](http://www.slideshare.net/AllanMarube/mqtthelperdiagram)
+[Click here to view diagram](http://www.slideshare.net/AllanMarube/mqtthelperdiagram)
 
 
