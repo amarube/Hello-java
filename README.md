@@ -13,7 +13,7 @@ This demo integrates MQTT and IBM MessageSight to provide a highly scalable, low
 Free draw, add objects of your own size and color, drag, format objects, remove what you don't like or clear everything and start all over again, discuss the design project with co-designers  and when you are done print and save a copy of the design on your Android device.  If you don't have space to store don't worry, the design is already saved in IBM MessageSight. Just login to same room every time and the design is intact.
 
 ##Subscription Topic
-smartboard//<room/>/#
+smartboard/"<"room">"/#
 
 ## Topic And Sample Payloads:
 
