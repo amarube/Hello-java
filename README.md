@@ -1,3 +1,4 @@
+
 #MQTT Smartboard
 
 ##Short Description
@@ -18,7 +19,7 @@ smartboard/<room>/#
 ## Topic And Sample Payloads:
 
 |Topic |Sample Topic|Sample Payload
-|:------ |:---------:| ------------:|
+|:------ |:---------:|:------------|
 |smartboard/<room>/objects/<id>[retained]| smartboard/room5/objects/2167f29d-3b38-432a-8091-6f20bfbff7b5| {"id":"2167f29d-3b38-432a-8091-6f20bfbff7b5","dimens":"382 330 620 517","type":"Rectangle","color":-16777216,"clientId":"paho-917066198329565","size":5} |
 |smartboard/<room>/chat|[smartboard/room5/chat]| {"selfie":"tjaXL...\n","message":"Allan: Hey dude!","time":"2014-09-02 16:07:55","username":"Allan%adb7177b-d39c-46cb-a6f1-235392b99873","type":"Chat","clientId":"paho-917066198329565","direction":false}|
 |smartboard/<room>/points|[smartboard/room5/points]|{"color":-16777216,"brushSize":5,"mX":784.2857055664063,"drawActionFlag":0,"type":"Point","clientId":"paho-917066198329565","mode":"pencil","mY":448.71429443359375}|
@@ -47,13 +48,14 @@ This design practice (where no MQTT clients are instantiated/called in activity 
 I have included a relational diagram of the classes in the project. This schematic representation is a useful resource for consolidating the classes, and understanding design methodology used.
 
 ##Future Development:
--Enable concurrent multi-room experience.
--Send short Audio/Video recordings in the chat room
--Undo 
--Dynamic scaling of canvas for multiple screen sizes
--Up navigation. (Check Android developer website)
--Last will option, delete user prescence info (empty payload ) from the server. Potential bug in Android Service  paho libraries.
--Secure sign-on. Etc.
+
+- Enable concurrent multi-room experience.
+- Send short Audio/Video recordings in the chat room
+- Undo 
+- Dynamic scaling of canvas for multiple screen sizes
+- Up navigation. (Check Android developer website)
+- Last will option, delete user prescence info (empty payload ) from the server. Potential bug in Android Service  paho libraries.
+- Secure sign-on. Etc.
 
 ##External Resources
 -http://www.eclipse.org/paho/files/android-javadoc/index.html
