@@ -15,7 +15,7 @@ Free draw, add objects of your own size and color, drag, format objects, remove 
 ##Subscription Topic
 smartboard/*room*/#
 
-## Topic And Sample Payloads:
+## Topic And Sample Payloads
 
 |Topic |Sample Topic|Sample Payload
 |:------ |:---------:|:------------|
@@ -31,7 +31,7 @@ In order to compile and run this code you will need to add two dependencies to t
 - [Eclipse Paho Mqtt Client library](http://www.eclipse.org/paho/clients/java/)
 - [Eclipse Paho Android Service](http://www.eclipse.org/paho/clients/android/)
 
-###Other notes:
+###Other notes
 This application is compiled to run on Android 4.1 (Jelly Bean) or later versions. Modify nmanifest file to
 compile for lower versions.
 This code was originally written with IntelliJ IDEA.
@@ -44,9 +44,9 @@ In this Smartboard application, for instance, you will notice that the client op
 
 This design practice (where no MQTT clients are instantiated/called in activity classes) also prevents loss of the MQTT client handles and/or MqttConnection in garbage collection when the activity is recreated such when mobile device or tablet is rotated to either landscape or potrait mode etc.
 
-I have included a relational diagram of the classes in the project. This schematic representation is a useful resource for consolidating the classes, and understanding design methodology used.
+I have included a relational diagram of the classes in the project. This schematic representation is a useful resource for consolidating the classes, and understanding design methodology.
 
-##Future Development:
+##Future Development
 
 - Enable concurrent multi-room experience.
 - Send short Audio/Video recordings in the chat room
