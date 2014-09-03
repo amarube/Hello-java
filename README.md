@@ -1,4 +1,3 @@
-
 #MQTT Smartboard
 
 ##Short Description
@@ -58,7 +57,8 @@ I have included a relational diagram of the classes in the project. This schemat
 - Secure sign-on. Etc.
 
 ##External Resources
--http://www.eclipse.org/paho/files/android-javadoc/index.html
--http://developer.android.com/index.html
--http://public.dhe.ibm.com/software/dw/webservices/ws-mqtt/mqtt-v3r1.html
--http://www.slideshare.net/BryanBoyd/dynamic-apps-with-websockets-and-mqtt-ibm-impact-2014
+
+- http://www.eclipse.org/paho/files/android-javadoc/index.html
+- http://developer.android.com/index.html
+- http://public.dhe.ibm.com/software/dw/webservices/ws-mqtt/mqtt-v3r1.html
+- http://www.slideshare.net/BryanBoyd/dynamic-apps-with-websockets-and-mqtt-ibm-impact-2014
