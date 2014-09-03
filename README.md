@@ -2,7 +2,7 @@
 
 ##Short Description
 
-Collaboratively design, share and discuss design projects in near real time on a specified design room. Automatically retain room designs remotely in IBM MessageSight server.  You don't have to design quietly. Brainstorm ideas, draft plans, send pictures to co-designers in a closed client-to-client chat environment.
+Collaboratively design, share and discuss design projects in near real time on a user-specified design room. Automatically retain room designs remotely in IBM MessageSight server.  You don't have to design quietly. Brainstorm ideas, draft plans, send pictures to co-designers in a closed client-to-client chat environment.
 
 ##How it works
 
@@ -10,7 +10,7 @@ This demo integrates MQTT and IBM MessageSight to provide a highly scalable, low
 
 ##Try it
 
-Free draw, add objects of your own size and color, drag, format objects, remove what you don't like or clear everything and start all over again, discuss the design project with co-designers  and when you are done print and save a copy of the design on your Android device.  If you don't have space to store don't worry, the design is already saved in IBM MessageSight. Just login to same room every time and the design is intact.
+Free draw, add objects of your own size and color, drag, format objects, remove what you don't like or clear everything and start all over again, discuss the design project with co-designers  and when you are done print and save a copy of the design on your Android device.  If you don't have space in memory don't worry, the design is already saved in IBM MessageSight. Just login to same room every time and the design is intact.
 
 ##Subscription Topic
 smartboard/*room*/#
@@ -44,7 +44,7 @@ In this Smartboard application, for instance, you will notice that the client op
 
 This design practice (where no MQTT clients are instantiated/called in activity classes) also prevents loss of the MQTT client handles and/or MqttConnection in garbage collection when the activity is recreated such when mobile device or tablet is rotated to either landscape or potrait mode etc.
 
-I have included a relational diagram of the classes in the project. This schematic representation is a useful resource for consolidating the classes, and understanding design methodology.
+I have included a [relational diagram](http://www.slideshare.net/AllanMarube/smart-boarddiagram-38627291) of the classes in the project. This schematic representation is a useful resource for consolidating the classes, and understanding design methodology.
 
 ##Future Development
 
@@ -62,3 +62,4 @@ I have included a relational diagram of the classes in the project. This schemat
 - http://developer.android.com/index.html
 - http://public.dhe.ibm.com/software/dw/webservices/ws-mqtt/mqtt-v3r1.html
 - http://www.slideshare.net/BryanBoyd/dynamic-apps-with-websockets-and-mqtt-ibm-impact-2014
+- http://www.slideshare.net/AllanMarube/smart-boarddiagram-38627291
