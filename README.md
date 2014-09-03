@@ -12,8 +12,9 @@ A simple MQTT Android client for test, debug and monitoring.
 ##Installation
 
  - Original development was done in Injellij IDEA. You may export the project to IDE of your choice.
- - Targetted sdk version = 19
  - Minimum sdk version = 11
- 
+ - Targetted sdk version = 19
 
  ##Relational Diagram
+ 
+ [click here](http://www.slideshare.net/AllanMarube/mqtthelperdiagram) 
